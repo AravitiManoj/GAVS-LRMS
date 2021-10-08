@@ -1,0 +1,17 @@
+.navigation ul li:hover a::after
+
+.navigation ul li:hover a::before
+
+.navigation ul li:hover a
+
+
+ <script>
+        //add hovered class in selected list item.
+        let list =document.querySelectorAll('.navigation li');
+        function activelink()
+        {
+            list.forEach((item) =>item .classList.remove('hovered'));
+            this. classList.add('hovered')
+        }
+        list.forEach((item) => item.addEventListener('mouseover',activelink));
+    </script>
